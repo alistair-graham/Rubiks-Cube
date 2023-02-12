@@ -1,0 +1,47 @@
+.cube-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2%;
+  background-color: black;
+}
+
+.cube-container-row {
+  display: flex;
+  align-self: center;
+  width: 40%;
+}
+
+.face {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  flex: 1 0 auto;
+  aspect-ratio: 1 / 1;
+  justify-content: stretch;
+}
+
+.face-row {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.square {
+  flex: 1 0 auto;
+}
+
+@media screen and (max-width: 840px) {
+  .cube-container {
+    margin-top: 5%;
+  }
+
+  .row {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .row {
+    width: 80%;
+  }
+}
