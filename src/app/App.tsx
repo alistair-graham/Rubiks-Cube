@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Controls from "../components/controls/Controls";
+import Controls from "../components/controls/controls/Controls";
 import Cube from "../components/cube/cube/Cube";
 import { CubeData, INITIAL_STATE } from "./types";
 

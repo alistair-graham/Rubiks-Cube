@@ -57,8 +57,8 @@ export const rotateRight = (
   newTopFace[8] = antiClock ? cubeData[4][0] : cubeData[2][8];
 
   newFrontFace[2] = antiClock ? cubeData[0][2] : cubeData[5][2];
-  newFrontFace[5] = antiClock ? cubeData[0][2] : cubeData[5][5];
-  newFrontFace[8] = antiClock ? cubeData[0][2] : cubeData[5][8];
+  newFrontFace[5] = antiClock ? cubeData[0][5] : cubeData[5][5];
+  newFrontFace[8] = antiClock ? cubeData[0][8] : cubeData[5][8];
 
   newBottomFace[2] = antiClock ? cubeData[2][2] : cubeData[4][6];
   newBottomFace[5] = antiClock ? cubeData[2][5] : cubeData[4][3];
