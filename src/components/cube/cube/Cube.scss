@@ -1,3 +1,5 @@
+@import "../../../shared.scss";
+
 .cube-container {
   display: flex;
   flex-direction: column;
@@ -36,13 +38,13 @@
   border-radius: 2px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $laptop-breakpoint) {
   .cube-container-row {
     width: 60%;
   }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: $tablet-breakpoint) {
   .cube-container {
     margin-top: 5%;
   }
@@ -62,7 +64,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $mobile-breakpoint) {
   .cube-container-row {
     width: 80%;
   }
