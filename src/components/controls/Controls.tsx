@@ -1,5 +1,5 @@
 import { CubeData } from "../../app/types";
-import { rotateFrontClockwise } from "../../Helpers/Rotations";
+import { rotateFront, rotateRightClockwise } from "../../Helpers/Rotations";
 
 interface IProps {
   cubeData: CubeData;
@@ -9,9 +9,14 @@ interface IProps {
 const Controls = (props: IProps) => {
   const { cubeData, setCubeData } = props;
   return (
-    <button onClick={() => rotateFrontClockwise(cubeData, setCubeData)}>
-      Rotate
+    <>
+      <button onClick={() => rotateFront(cubeData, setCubeData)}>
+        Rotate Front Clockwise
     </button>
+      <button onClick={() => rotateFront(cubeData, setCubeData, true)}>
+        Rotate Front Anti-Clockwise
+      </button>
+    </>
   );
 };
 
