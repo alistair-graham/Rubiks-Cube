@@ -1,4 +1,5 @@
 import { Colour } from "../../../app/types";
+import Square from "../square/Square";
 
 interface IProps {
   cubeData?: Array<Colour>;
@@ -14,19 +15,19 @@ const Face = (props: IProps) => {
   return (
     <div className="face">
       <div className="face-row">
-        <div className="square" style={{ backgroundColor: cubeData[0] }}></div>
-        <div className="square" style={{ backgroundColor: cubeData[1] }}></div>
-        <div className="square" style={{ backgroundColor: cubeData[2] }}></div>
+        <Square colour={cubeData[0]} />
+        <Square colour={cubeData[1]} />
+        <Square colour={cubeData[2]} />
       </div>
       <div className="face-row">
-        <div className="square" style={{ backgroundColor: cubeData[3] }}></div>
-        <div className="square" style={{ backgroundColor: cubeData[4] }}></div>
-        <div className="square" style={{ backgroundColor: cubeData[5] }}></div>
+        <Square colour={cubeData[3]} />
+        <Square colour={cubeData[4]} />
+        <Square colour={cubeData[5]} />
       </div>
       <div className="face-row">
-        <div className="square" style={{ backgroundColor: cubeData[6] }}></div>
-        <div className="square" style={{ backgroundColor: cubeData[7] }}></div>
-        <div className="square" style={{ backgroundColor: cubeData[8] }}></div>
+        <Square colour={cubeData[6]} />
+        <Square colour={cubeData[7]} />
+        <Square colour={cubeData[8]} />
       </div>
     </div>
   );
