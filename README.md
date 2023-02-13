@@ -14,6 +14,7 @@ A responsive rubik's cube game. Rotate the planes of the cube until the rubik's 
 - UI representation of the game that is responsive to the window size.
 - Ability to rotate any axis clockwise or anti-clockwise.
 - Buttons to control the rotations.
+<img width="500" alt="Screenshot 2023-02-13 at 03 08 39" src="https://user-images.githubusercontent.com/124267255/218361696-4b638cdb-64a6-4c76-9e71-4ba545d244de.png">
 
 ## Future work (given more time)
 - I would have liked to have used a state management tool such as Redux. It would have reduced the usage of props and would have made it more easily testable.
