@@ -1,0 +1,13 @@
+@import "../../../shared.scss";
+
+.square {
+  flex: 1 0 auto;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .square {
+    border-width: 1px;
+  }
+}

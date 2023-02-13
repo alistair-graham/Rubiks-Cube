@@ -13,31 +13,6 @@
   width: 40%;
 }
 
-.face {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
-  aspect-ratio: 1 / 1;
-  justify-content: stretch;
-}
-
-.blank-face {
-  // Minimum size of the sum of a face's border lines
-  height: 12px;
-  width: 12px;
-}
-
-.face-row {
-  display: flex;
-  flex: 1 0 auto;
-}
-
-.square {
-  flex: 1 0 auto;
-  border: 2px solid black;
-  border-radius: 2px;
-}
-
 @media screen and (max-width: $laptop-breakpoint) {
   .cube-container-row {
     width: 60%;
@@ -51,16 +26,6 @@
 
   .cube-container-row {
     width: 70%;
-  }
-
-  .square {
-    border-width: 1px;
-  }
-
-  .blank-face {
-    // Minimum size of the sum of a face's border lines
-    height: 6px;
-    width: 6px;
   }
 }
 

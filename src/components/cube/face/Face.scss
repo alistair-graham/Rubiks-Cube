@@ -1,0 +1,28 @@
+@import "../../../shared.scss";
+
+.face {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  aspect-ratio: 1 / 1;
+  justify-content: stretch;
+}
+
+.blank-face {
+  // Adjusting for the size increase caused by borderlines
+  height: 12px;
+  width: 12px;
+}
+
+.face-square-row {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .blank-face {
+    // Adjusting for the size increase caused by borderlines
+    height: 6px;
+    width: 6px;
+  }
+}

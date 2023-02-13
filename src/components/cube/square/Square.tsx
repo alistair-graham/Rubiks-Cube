@@ -1,3 +1,4 @@
+import "./Square.scss";
 import { Colour } from "../../../app/types";
 
 interface IProps {
