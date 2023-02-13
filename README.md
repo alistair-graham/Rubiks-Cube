@@ -19,3 +19,11 @@ A responsive rubik's cube game. Rotate the planes of the cube until the rubik's 
 - I would have liked to have used a state management tool such as Redux. It would have reduced the usage of props and would have made it more easily testable.
 - Keyboard interactions
 - A nicer UI for the buttons. I didn't put much effort into their appearance.
+
+## How to run locally
+- Clone the repository locally.
+- Run the following commands:
+
+&emsp;`npm install`
+
+&emsp;`npm start`
