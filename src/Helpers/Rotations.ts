@@ -117,6 +117,45 @@ export const rotateLeft = (
   ]);
 };
 
+export const rotateTop = (
+  cubeData: CubeData,
+  setCubeData: React.Dispatch<React.SetStateAction<CubeData>>,
+  antiClock?: boolean
+) => {
+  const newTopFace = Array<Colour>(9);
+  const newLeftFace = [...cubeData[1]];
+  const newFrontFace = [...cubeData[2]];
+  const newRightFace = [...cubeData[3]];
+  const newBackFace = [...cubeData[4]];
+
+  rotateFace(newTopFace, cubeData[0], antiClock);
+
+  newLeftFace[0] = antiClock ? cubeData[4][0] : cubeData[2][0];
+  newLeftFace[1] = antiClock ? cubeData[4][1] : cubeData[2][1];
+  newLeftFace[2] = antiClock ? cubeData[4][2] : cubeData[2][2];
+
+  newFrontFace[0] = antiClock ? cubeData[1][0] : cubeData[3][0];
+  newFrontFace[1] = antiClock ? cubeData[1][1] : cubeData[3][1];
+  newFrontFace[2] = antiClock ? cubeData[1][2] : cubeData[3][2];
+
+  newRightFace[0] = antiClock ? cubeData[2][0] : cubeData[4][0];
+  newRightFace[1] = antiClock ? cubeData[2][1] : cubeData[4][1];
+  newRightFace[2] = antiClock ? cubeData[2][2] : cubeData[4][2];
+
+  newBackFace[0] = antiClock ? cubeData[3][0] : cubeData[1][0];
+  newBackFace[1] = antiClock ? cubeData[3][1] : cubeData[1][1];
+  newBackFace[2] = antiClock ? cubeData[3][2] : cubeData[1][2];
+
+  setCubeData([
+    newTopFace,
+    newLeftFace,
+    newFrontFace,
+    newRightFace,
+    newBackFace,
+    cubeData[5],
+  ]);
+};
+
 const rotateFace = (
   newFace: Array<Colour>,
   oldFace: Array<Colour>,
