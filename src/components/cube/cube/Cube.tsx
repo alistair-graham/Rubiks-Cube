@@ -1,75 +1,33 @@
-import { Colour } from "../../../app/types";
+import { CubeData } from "../../../app/types";
 import "./Cube.scss";
 import Face from "../face/Face";
 
-const Cube = () => {
+interface IProps {
+  cubeData: CubeData;
+}
+
+const Cube = (props: IProps) => {
+  const { cubeData } = props;
+
   return (
     <div className="cube-container">
       <div className="cube-container-row">
-        <Face
-          colourArray={[
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-          ]}
-        />
-        <Face
-          colourArray={[
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-          ]}
-        />
-        <Face
-          colourArray={[
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-          ]}
-        />
-        <Face
-          colourArray={[
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-            Colour.Blue,
-          ]}
-        />
+        <Face />
+        <Face cubeData={cubeData[0]} />
+        <Face />
+        <Face />
       </div>
       <div className="cube-container-row">
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
+        <Face cubeData={cubeData[1]} />
+        <Face cubeData={cubeData[2]} />
+        <Face cubeData={cubeData[3]} />
+        <Face cubeData={cubeData[4]} />
       </div>
       <div className="cube-container-row">
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
+        <Face />
+        <Face cubeData={cubeData[5]} />
+        <Face />
+        <Face />
       </div>
     </div>
   );
