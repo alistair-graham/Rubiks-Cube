@@ -5,6 +5,7 @@ import {
   rotateRight,
   rotateTop,
   rotateBottom,
+  rotateBack,
 } from "../../Helpers/Rotations";
 
 interface IProps {
@@ -45,6 +46,12 @@ const Controls = (props: IProps) => {
       </button>
       <button onClick={() => rotateBottom(cubeData, setCubeData, true)}>
         Rotate Bottom Anti-Clockwise
+      </button>
+      <button onClick={() => rotateBack(cubeData, setCubeData)}>
+        Rotate Back Clockwise
+      </button>
+      <button onClick={() => rotateBack(cubeData, setCubeData, true)}>
+        Rotate Back Anti-Clockwise
       </button>
     </>
   );
