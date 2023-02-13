@@ -9,6 +9,7 @@ const App = () => {
   return (
     <div className="App">
       <Cube cubeData={cubeData} />
+      <Controls cubeData={cubeData} setCubeData={setCubeData} />
     </div>
   );
 };
