@@ -18,7 +18,7 @@ A responsive rubik's cube game. Rotate the planes of the cube until the rubik's 
 - Buttons to control the rotations.
 
 ## Screenshots
-####Desktop view
+#### Desktop view
 
 <img width="543" alt="Screenshot 2023-02-14 at 00 02 14" src="https://user-images.githubusercontent.com/124267255/218602301-7ee3731f-49a2-4286-858a-3ef699a95213.png">
 
