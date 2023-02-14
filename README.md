@@ -1,4 +1,3 @@
-
 ### Rubik's Cube
 
 ## Tech stack
@@ -31,14 +30,14 @@ A responsive rubik's cube game. Rotate the planes of the cube until the rubik's 
 <img width="317" alt="Screenshot 2023-02-14 at 00 07 38" src="https://user-images.githubusercontent.com/124267255/218603195-ba1795f6-f5e8-4c13-a167-49c74ada10a4.png">
 
 ## Future work (given more time)
-- I would like to use a state management tool such as Redux. It would have reduced the usage of props and would have made it more easily testable.
-- More tests. I have only written one test which is to show that I know how to write them.
+- I would like to use a state management tool such as Redux.
+- Testing. I have only written one test which is to only represent that I know how to write them.
 - Keyboard interactions.
 - A nicer UI for the buttons. I didn't put much effort into their appearance due to time constraints.
-- Animations
-- Randomiser button
-- Celebration when it's completed
-- ...Much more
+- Animations.
+- Randomiser button.
+- Celebration when the cube is completed.
+- Much more...
 
 ## How to run locally
 - Clone the repository locally.
