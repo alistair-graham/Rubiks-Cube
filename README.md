@@ -34,7 +34,11 @@ A responsive rubik's cube game. Rotate the planes of the cube until the rubik's 
 - I would like to use a state management tool such as Redux. It would have reduced the usage of props and would have made it more easily testable.
 - More tests. I have only written one test which is to show that I know how to write them.
 - Keyboard interactions.
-- A nicer UI for the buttons. I didn't put much effort into their appearance due to time constraints. The technical test did not require a UI representation but I've made a basic one.
+- A nicer UI for the buttons. I didn't put much effort into their appearance due to time constraints.
+- Animations
+- Randomiser button
+- Celebration when it's completed
+- ...Much more
 
 ## How to run locally
 - Clone the repository locally.
