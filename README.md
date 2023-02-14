@@ -47,3 +47,5 @@ A responsive rubik's cube game. Rotate the planes of the cube until the rubik's 
 &emsp;`npm install`
 
 &emsp;`npm start`
+
+- Open `localhost:3000` in your browser.
