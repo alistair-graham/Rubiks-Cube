@@ -32,6 +32,7 @@ A responsive rubik's cube game. Rotate the planes of the cube until the rubik's 
 ## Future work (given more time)
 - I would like to use a state management tool such as Redux.
 - Testing. I have only written one test which is to only represent that I know how to write them.
+- Algorithms. My solution is probably a naive way of rotating the cube. There is likely a matrix algorithm that can calculate the rotations in a more succinct way.
 - Keyboard interactions.
 - A nicer UI for the buttons. I didn't put much effort into their appearance due to time constraints.
 - Animations.
